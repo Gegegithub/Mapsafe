@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #eb7371; /* Couleur du titre */
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username,
+.mail,
+.compte {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #f4f4f4; /* Couleur du fond */
+    color: #f4f4f4; /* Texte de la même couleur que le fond */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour un effet de survol */
+}
+
+button:hover {
+    background-color: #d65554; /* Couleur de fond au survol */
+    color: white; /* Texte blanc au survol */
+}

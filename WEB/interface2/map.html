@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+      type="text/css"
+    />
+
+    <title>Carte</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+        .buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .buttons button {
+            margin: 5px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #eee;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id='map'></div>
+    <div class="buttons">
+        <button id="current-location">Ma position actuelle</button>
+        <button id="settings">Paramètres</button>
+    </div>
+</body>
+</html>
